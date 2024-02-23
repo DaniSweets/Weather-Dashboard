@@ -6,13 +6,8 @@
 
 //key: cdbb44dbf98708fea636f843b1b4d3b1
 
-var submit = document.getElementById("submit");
-// var cityName = document.getElementById("cityName").innerText;
-// console.log(cityName);
-var logName = function () {
-    var cityName = document.getElementById("cityName").value;
-    localStorage.setItem("currentCity", cityName);
-    console.log(cityName);
-};
+//event handler for searchbar
+//functionality to take in info from searchbar and insert it into fetch request
 
-
+//fetch request to return weather info
+//add in html elements to render with info returned
