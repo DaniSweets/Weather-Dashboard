@@ -12,23 +12,49 @@
 
 <body>
     <img id="background" src="./assets/pexels-magda-ehlers-2114014.jpg">
-    <div class="section"><h1 class="title">Weather Forecast</h1></div>
-<div class="section"><main class="tile is-ancestor">
-    <!-- search bar -->
-    <section class="tile is-3 is-vertical has-background-white">
-    <label for="searchForm" class="subtitle">Please enter a city to get your forecast!</label>
-    <form id="searchForm" class="content">
-        <input type="text" id="cityInput" class="input" placeholder="City Name"></input>
-        <button type="submit" class="button">Search</button>
-    </form>
-    </section>
+    <div class="section">
+        <h1 class="title">Weather Forecast</h1>
+    </div>
+    <div class="section">
+        <main class="tile is-ancestor">
+            <!-- search bar -->
+            <div class="tile is-parent is-3 is-vertical">
+                <section class="tile is-child box has-background-white">
+                    <label for="searchForm" class="subtitle">Please enter a city to get your forecast!</label>
+                    <form id="searchForm" class="content">
+                        <input type="text" id="cityInput" class="input" placeholder="City Name"></input>
+                        <button type="submit" class="button">Search</button>
+                    </form>
+                </section>
 
-    <!-- recent searches (pulled from local storage) -->
+                <!-- recent searches (pulled from local storage) -->
+                <section class="tile is-child box has-background-white">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quaerat quas et laborum quos quam
+                        velit molestiae iste deserunt. Aut molestiae assumenda sunt commodi, sapiente voluptatum itaque
+                        ad nisi neque.</p>
+                </section>
+            </div>
 
-    <!-- div to put current forecast -->
+            <div class="tile is-parent box">
+                <!-- div to put current forecast -->
+                <section class="tile is-child">
+                    <p class="subtitle">Current Weather</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quidem sit tempore, neque
+                        explicabo, minima maxime libero, fugiat eius nam numquam nostrum? Doloremque error nisi fuga
+                        eligendi doloribus magni provident.</p>
+                </section>
 
-    <!-- div for future forecast -->
-</main></div>
+                <!-- div for future forecast -->
+                <section class="tile is-child">
+                    <p class="subtitle">Forecast</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quidem sit tempore, neque
+                        explicabo, minima maxime libero, fugiat eius nam numquam nostrum? Doloremque error nisi fuga
+                        eligendi doloribus magni provident.</p>
+                </section>
+
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>
