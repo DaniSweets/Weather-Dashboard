@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
     <title>Weather Forecast</title>
 </head>
+
 <body>
+    <img id="background" src="./assets/pexels-magda-ehlers-2114014.jpg">
+    <div class="section"><h1 class="title">Weather Forecast</h1></div>
+<div class="section"><main class="tile is-ancestor">
     <!-- search bar -->
+    <section class="tile is-3 is-vertical has-background-white">
+    <label for="searchForm" class="subtitle">Please enter a city to get your forecast!</label>
+    <form id="searchForm" class="content">
+        <input type="text" id="cityInput" class="input" placeholder="City Name"></input>
+        <button type="submit" class="button">Search</button>
+    </form>
+    </section>
 
     <!-- recent searches (pulled from local storage) -->
 
     <!-- div to put current forecast -->
 
     <!-- div for future forecast -->
-
+</main></div>
 </body>
+
 </html>
