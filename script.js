@@ -21,14 +21,14 @@ window.addEventListener('load', (event) => {
     document.getElementById("searchForm").addEventListener("submit", function (event) {
         event.preventDefault();
         //functionality to take in info from searchbar and insert it into fetch request
-        // var cityName = document.getElementById("cityInput").value;
-        // var fetchUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&limit=5&appid=${apiKey}&units=imperial`;
-        // displayWeather(cityName, fetchUrl);
-
-        var cityName = "denver";
-        var fetchUrl = "http://api.openweathermap.org/data/2.5/forecast?q=denver&appid=cdbb44dbf98708fea636f843b1b4d3b1&units=imperial";
-
+        var cityName = document.getElementById("cityInput").value;
+        var fetchUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&limit=5&appid=${apiKey}&units=imperial`;
         displayWeather(cityName, fetchUrl);
+
+        // var cityName = "denver";
+        // var fetchUrl = "http://api.openweathermap.org/data/2.5/forecast?q=denver&appid=cdbb44dbf98708fea636f843b1b4d3b1&units=imperial";
+
+        // displayWeather(cityName, fetchUrl);
     });
 });
 
@@ -41,7 +41,7 @@ function displayWeather(cityName, fetchUrl) {
         })
         .then(function (data) {
 
-
+            console.log(data.list);
 
 
             var currentWeather = document.getElementById("currentContent");
