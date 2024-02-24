@@ -22,7 +22,7 @@ window.addEventListener('load', (event) => {
         event.preventDefault();
         //functionality to take in info from searchbar and insert it into fetch request
         var cityName = document.getElementById("cityInput").value;
-        var fetchUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&limit=5&appid=${apiKey}&units=imperial`;
+        var fetchUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&limit=5&appid=${apiKey}&units=imperial`;
         displayWeather(cityName, fetchUrl);
 
         // var cityName = "denver";
